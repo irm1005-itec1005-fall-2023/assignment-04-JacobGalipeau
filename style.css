@@ -71,6 +71,7 @@ main h1 {
   padding: 10px;
 }
 
+
 form.exercise-list {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -85,16 +86,15 @@ form.exercise-list label {
 
 
 input[type="text"] {
-  background-color: #003049;
+  /*background-color: white;*/
   border: none;
-  color: white;
+  /*color: white;*/
   font-weight: bold;
   padding: 10px 10px;
   text-decoration: none;
   cursor: pointer;
-
   border-radius: 10px;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  /*box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);*/
 }
 
 /*When nothing written*/
@@ -113,7 +113,43 @@ main .hidden {
   display: none;
 }
 
+.apptodo{
+  width: 100%;
+  max-width: 540px;
+  background: whitesmoke;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
 
+.list-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background:transparent;
+  pading: 10px;
+  font-weight: 14px;
+}
+
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #457b9d;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
 
 /*
 .apptodo{
