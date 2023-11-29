@@ -54,3 +54,28 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+.container{
+  width:  100%;
+  min-height: 100vh;
+  background: linear-gradient(50deg, #a8dadc, #1d3557);
+  padding: 10px;
+}
+
+.apptodo{
+  background: #a8dadc;
+  border-radius: 15px;
+  margin: 100px auto 20px;
+  padding: 50px;
+  width: 100%;
+  max-width: 530px;
+  align-content: center;
+}
+
+.apptodo h2{
+  color: rgb(112, 112, 112);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
