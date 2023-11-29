@@ -11,15 +11,27 @@
 
 // Constants
 const appID = "app";
-/*const headingText = "To do. To done. ✅";
+const ibox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container")
+/*const headingText = "To do. To done. ✅";*/
 
 // DOM Elements
-let appContainer = document.getElementById(appID);
+//let appContainer = document.getElementById(appID);
 
 //
 // Functions
+function Additem(){
+  if (ibox.value ==='number'){
+    console.log("please, only type in letters");
+  }
+  else{
+    let li = document.createElement("li");
+    li.innerHTML = ibox.value;
+    listContainer.appendChild(li);
+  }
+}
 //
-
+/*
 // Add a heading to the app container
 function inititialise() {
   // If anything is wrong with the app container then end
