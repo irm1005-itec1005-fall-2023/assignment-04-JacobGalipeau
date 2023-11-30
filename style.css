@@ -140,15 +140,59 @@ input{
   font-weight: 14px;
 }
 
-button{
+#addbtn{
   border: none;
   outline: none;
   padding: 16px 50px;
   background: #457b9d;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   cursor: pointer;
   border-radius: 40px;
+}
+
+ul li{
+  list-style: none;
+  padding: 10px 10px 10px 45px;
+  font-size: 15px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li::before{
+  content:'';
+  position: absolute;
+  border-radius: 40%;
+  width: 25px;
+  height: 25px;
+  
+}
+
+ul li.selected{
+  text-decoration: line-through;
+}
+
+#check{
+  border: none;
+  border-radius: 35px;
+  outline: none;
+  padding: 12px 40px;
+  font-size: 10px;
+  background: rgb(0, 211, 0);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#remove{
+  border: none;
+  border-radius: 35px;
+  outline: none;
+  padding: 12px 40px;
+  font-size: 10px;
+  background: rgb(213, 50, 55);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 /*

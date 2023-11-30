@@ -11,8 +11,8 @@
 
 // Constants
 const appID = "app";
-const ibox = document.getElementById("input-box");
-const listContainer = document.getElementById("list-container")
+const ibox = document.getElementById("ibox");
+const listitem = document.getElementById("listitem")
 /*const headingText = "To do. To done. ✅";*/
 
 // DOM Elements
@@ -27,7 +27,7 @@ function Additem(){
   else{
     let li = document.createElement("li");
     li.innerHTML = ibox.value;
-    listContainer.appendChild(li);
+    listitem.appendChild(li);
   }
 }
 //
