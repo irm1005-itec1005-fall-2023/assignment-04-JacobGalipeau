@@ -15,8 +15,8 @@
 const ibox = document.getElementById("ibox");
 const listitems = document.getElementById("list-items")
 //const addbtn = document.getElementById("add-button")
-//const checkbtn = document.getElementById("check-button")
-//const removebtn = document.getElementById("remove-button")
+const checkbtn = document.getElementById("check-button")
+const removebtn = document.getElementById("remove-button")
 //const txt = document.createTextNode("listitem");
 //li.appendChild(txt);
 /*const headingText = "To do. To done. ✅";*/
@@ -27,7 +27,7 @@ const listitems = document.getElementById("list-items")
 //
 // Functions
 function Additem(){
-  if (ibox.value === ''){
+  if (ibox.value === ""){
     console.log("please, write something");
   }
   else{
@@ -36,6 +36,8 @@ function Additem(){
     listitems.appendChild(li);
   }
 }
+const emptystate = document.getElementById("empty-state")
+emptystate.classList.add("hidden");
 //
 /*
 // Add a heading to the app container

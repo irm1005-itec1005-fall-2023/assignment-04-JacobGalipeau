@@ -27,12 +27,13 @@
 /*
   PAGE / BODY
 */
+/*Styles for body*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--body-default-colour);
   background-color: var(--body-background-colour);
 }
-
+/*Styles for main section*/
 main {
   border-radius: 35px;
   box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,6 +44,7 @@ main {
 
 main h1 {
   font-size: 2rem;
+  text-align: center;
 }
 
 /****** Screen reader text utility clsas *******/
@@ -58,13 +60,16 @@ main h1 {
   border-width: 0;
 }
 
-/*Styles for background*/
+/*Styles for background/container*/
 .container{
   width:  100%;
   min-height: 100vh;
   background: linear-gradient(50deg, #a8dadc, #1d3557);
-  padding: 10px;
+  padding: 15px;
+  box-shadow: #1d3557 3px 8px 35px;
 }
+
+
 /*
 form.exercise-list {
   display: grid;
@@ -90,35 +95,29 @@ form.exercise-list label {
 
 /*When nothing written*/
 /*main .empty-state {
-  margin: 10px 0px 10px 0px;
-  border: 10px solid #003049;
-  padding: 20px;
-  border-radius: 20px;
-
-  background-color: #b3b3b3;
   text-align: center;
   font-size: 1.4rem;
-}
-
-main .hidden {
-  display: none;
 }*/
 
+
+
+/*Styles for Todo app sections*/
 .apptodo{
   width: 100%;
   max-width: 540px;
   background: whitesmoke;
-  margin: 100px auto 20px;
-  padding: 40px 30px 70px;
+  margin: 65px auto 20px;
+  padding: 30px;
   border-radius: 10px;
 }
 
+/*Styles for writting bar and add button*/
 .list-items{
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: white;
-  border-radius: 30px;
+  border-radius: 25px;
   padding-left: 20px;
   margin-bottom: 25px;
 }
@@ -143,6 +142,12 @@ button{
   border-radius: 40px;
 }
 
+/*Styles for Todo list content*/
+ul li{
+  font-size: 40px;
+  font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
 ul li{
   list-style: none;
   padding: 10px 10px 10px 45px;
@@ -152,6 +157,7 @@ ul li{
   position: relative;
 }
 
+/*Styles for done or not done indicator*/
 ul li::before{
   content:'';
   position: absolute;
@@ -162,7 +168,7 @@ ul li::before{
   background-size: cover;
   background-position: center;
   top: 10px;
-  left: 8px;
+  left: 20px;
 }
 
 ul li.selected{
@@ -173,13 +179,24 @@ ul li.selected::before{
   background-image: url(images/arm.jpeg);
 }
 
-/*
+/*Styles for check and remove button*/
+#check,
+#remove {
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding: 12px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
 #check{
   border: none;
   border-radius: 35px;
   outline: none;
   padding: 12px 40px;
-  font-size: 10px;
+  font-size: 15px;
   background: rgb(0, 211, 0);
   color: rgb(255, 255, 255);
   cursor: pointer;
@@ -190,11 +207,11 @@ ul li.selected::before{
   border-radius: 35px;
   outline: none;
   padding: 12px 40px;
-  font-size: 10px;
+  font-size: 15px;
   background: rgb(213, 50, 55);
   color: rgb(255, 255, 255);
   cursor: pointer;
 }
-*/
+
 
 
