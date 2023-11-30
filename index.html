@@ -43,7 +43,6 @@
   <main>
    
     <div class="container">
-  
       <div class="apptodo">
         <img
         src="./images/gym-background.avif"
@@ -51,27 +50,30 @@
         >
     <h1>To-Do list for your workout</h1>
 
-    <form id="list-form" class="exercise-list">
-      <label for="exercise-type">Exercises for today's workout:</label>
+    <!--<form id="list-form" class="exercise-list">-->
+      <!--<label for="exercise-type">Exercises for today's workout:</label>-->
 
       <div class="list-items">
-        <input type="text" id="ibox" placeholder="Write what's next">
+        <input type="txt" id="ibox" placeholder="Write what's next">
         <button id="addbtn" onclick="Additem()">Add exercise</button>
       </div>    
     </form>
 
-   <!-- <section> -->
+   <!-- <button id="check" onclick="checkitem()">Done</button> 
+    <button id="remove" onclick="removeitem()">Remove</button>-->
+
+   <!-- <section> 
       <h2 class="sr-only">Exercise name</h2>
 
       <div class="empty-state">
         <p>No exercises left!</p>
-      </div>
+      </div>-->
       <ul id="listitem">
-        <li class="selected">item 1</li>
+      <!-- <li class="selected">item 1</li>
         <li>item 2</li>
-        <li>item 3</li>
+        <li>item 3</li>-->
       </ul>
-     <!-- <button id="check" onclick="checkitem()">Done</button> <button id="remove" onclick="removeitem()">Remove</button>-->
+    
     </div>
     </div>
 

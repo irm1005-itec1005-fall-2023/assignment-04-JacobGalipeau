@@ -10,9 +10,15 @@
 //
 
 // Constants
-const appID = "app";
+//const appID = "app";
+//const li = document.createElement("li");
 const ibox = document.getElementById("ibox");
-const listitem = document.getElementById("listitem")
+const listitems = document.getElementById("list-items")
+//const addbtn = document.getElementById("add-button")
+//const checkbtn = document.getElementById("check-button")
+//const removebtn = document.getElementById("remove-button")
+//const txt = document.createTextNode("listitem");
+//li.appendChild(txt);
 /*const headingText = "To do. To done. ✅";*/
 
 // DOM Elements
@@ -21,13 +27,13 @@ const listitem = document.getElementById("listitem")
 //
 // Functions
 function Additem(){
-  if (ibox.value ==='number'){
-    console.log("please, only type in letters");
+  if (ibox.value === ''){
+    console.log("please, write something");
   }
   else{
     let li = document.createElement("li");
     li.innerHTML = ibox.value;
-    listitem.appendChild(li);
+    listitems.appendChild(li);
   }
 }
 //
@@ -52,4 +58,4 @@ function inititialise() {
 //
 // Inits & Event Listeners
 //
-inititialise();
+inititialise();*/
